@@ -1,35 +1,20 @@
-# Deep RL Quadcopter Controller
+# Ensinando um quadricoptero a voar
 
-*Teach a Quadcopter How to Fly!*
+O projeto faz parte do curso Engenheiro de Machine Learning
 
-In this project, you will design an agent to fly a quadcopter, and then train it using a reinforcement learning algorithm of your choice! 
+![alt text](https://github.com/vyniciuss/NDG_ml_customer_segments/blob/master/segmentos.jpg)
 
-## Project Instructions
+## Visão Geral do Projeto
 
-1. Clone the repository and navigate to the downloaded folder.
+O quadricóptero ou helicóptero quadrirotor está se tornando um tipo de aeronave cada vez mais popular tanto para uso pessoal quando profissional. Sua facilidade para manobras mostra-se útil para várias aplicações, de entregas em curtas distâncias a cinematografia, de acrobacias a busca e resgate.
 
-```
-git clone https://github.com/udacity/RL-Quadcopter-2.git
-cd RL-Quadcopter-2
-```
+A maioria dos quadricópteros têm 4 motores para fornecer impulso, embora alguns outros modelos com 6 ou 8 motores também sejam incluídos informalmente nesta categoria. Múltiplos pontos de impulso com um centro de gravidade no centro aumentam a estabilidade e possibilitam uma variedade de comportamentos de voo.
 
-2. Create and activate a new environment.
+Mas existe um preço para tudo isso–a alta complexidade do controle de uma aeronave desse tipo faz com que seja quase impossível controlar o impulso de cada motor manualmente. Assim, a maioria dos quadricópteros comerciais tentam simplificar os controle de voo ao aceitar uma única magnitude de impulso e controles de arfagem/rolagem/guinada, tornando seu controle muito mais intuitivo e divertido.
 
-```
-conda create -n quadcop python=3.6 matplotlib numpy pandas
-source activate quadcop
-```
+O próximo passo nesta evolução é possibilitar que quadricópteros assumam comportamentos de controle desejados, tais como decolagem e pouso, de forma autônoma. Você poderia projetar estes controles usando uma abordagem clássica (digamos, implementando controladores PID). Ou ainda você poderia usar aprendizado por reforço para criar agentes que possam aprender estes comportamentos por conta própria. E é exatamente isso que você irá fazer neste projeto!
 
-3. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `quadcop` environment. 
-```
-python -m ipykernel install --user --name quadcop --display-name "quadcop"
-```
 
-4. Open the notebook.
-```
-jupyter notebook Quadcopter_Project.ipynb
-```
 
-5. Before running code, change the kernel to match the `quadcop` environment by using the drop-down menu (**Kernel > Change kernel > quadcop**). Then, follow the instructions in the notebook.
 
-6. You will likely need to install more pip packages to complete this project.  Please curate the list of packages needed to run your project in the `requirements.txt` file in the repository.
+
