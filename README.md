@@ -2,7 +2,7 @@
 
 O projeto faz parte do curso Engenheiro de Machine Learning
 
-![alt text](https://github.com/vyniciuss/NDG_ml_customer_segments/blob/master/segmentos.jpg)
+![alt text](https://github.com/vyniciuss/RL_Quadcopter/blob/master/drone.jpg)
 
 ## Visão Geral do Projeto
 
